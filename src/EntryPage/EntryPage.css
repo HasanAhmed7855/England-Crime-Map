@@ -1,0 +1,201 @@
+.totalContainer {
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.title {
+  text-align: center;
+}
+
+.neighbourhoodTitle {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.zipCodeContainer {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  border: 3px solid black;
+  width: fit-content;
+}
+.zipCode {
+  margin: 0px;
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  margin-left: 3px;
+  border-radius: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.errorMessageStyling {
+  color: red;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.navBar { 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.CityOfLondonButtonStyling {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.CityOfLondonButtonStyling:hover {
+  background-color: #3d923e;
+}
+
+.CityOfLondonButtonStyling:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.parent-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 20px;
+}
+
+.keyButton {
+  display: none;
+  background-color: rgb(47, 93, 219);
+  color: white;
+  padding: 5px;
+  border: 3px solid black;
+  right: 0;
+  top:0;
+
+  white-space: pre-line;
+}
+
+.keyComponentSection {
+  background-color: white;
+  border: 2px solid black;
+  width: fit-content;
+  top: 36px;
+}
+
+@media screen and (max-width: 780px) {
+  .parent-grid-container {
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .keyButton {
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .keyComponentMobileContainer {
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
+
+  .keyComponentSection {
+    display: none;
+  }
+
+}
+
+.filterTotalContainer {
+  position: absolute;
+  z-index: 1;
+  top: 310px;
+  left: 250px;
+}
+
+@media screen and (max-width: 570px) { 
+  .filterTotalContainer {
+    top: 380px;
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 550px) { 
+  .filterTotalContainer {
+    top: 400px;
+    left: 40px;
+  }
+}
+
+.filterToggleButton {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.filterContainer {
+  display: none;
+  
+  background-color: white;
+  border: 2px solid black;
+  max-width: 280px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.specificCrimeCheckboxes {
+  margin-left: 20px;
+}
+
+.InfoContainer {
+  border: 2px solid black;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.info-grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
+}
